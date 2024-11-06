@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print details
-        run: echo "titulo->${{ github.event.title }} data->${{ github.event.updated_at }} url->${{github.event.url}}"
+        run: echo "titulo->${{ github.event.issue.title }} data->${{ github.event.issue.updated_at }} url->${{github.event.issue.url}}"
