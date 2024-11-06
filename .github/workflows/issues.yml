@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print details
-        run: echo "${{ toJSON(github) }}"
+        run: echo "titulo:${{ github.event.title }} data:${{ github.event.updated_at }} url:${{github.event.url}}"
