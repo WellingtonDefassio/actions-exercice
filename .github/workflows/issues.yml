@@ -1,0 +1,10 @@
+name: Lint, Test and Deploy
+on: 
+  issues:
+    types: [opened]
+jobs:
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print details
+        run: "${{ github.repository_owner }}"
