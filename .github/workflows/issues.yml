@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print details
-        run: "${{ github.repository_owner }}"
+        run: "echo ${{ github.repository_owner }}"
